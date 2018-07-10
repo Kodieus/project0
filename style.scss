@@ -1,10 +1,12 @@
-$body-bg-colour: #84b3ff;
-$nav-colour: #1f5fc6;
-$selected-nav-colour: #0e47a3;
-$nav-text-colour: white;
+$body-bg-colour: lightgrey;
+$nav-colour: #00391c;
+$selected-nav-colour: #096302;
+$nav-text-colour: lightgrey;
+$body-txt-colour: black;
 
 body {
 	background-color: $body-bg-colour;
+	color: $body-txt-colour;
 }
 
 .main p {

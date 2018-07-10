@@ -1,5 +1,6 @@
 body {
-  background-color: #84b3ff;
+  background-color: lightgrey;
+  color: black;
 }
 
 .main p {
@@ -7,11 +8,11 @@ body {
 }
 
 .nav-link {
-  color: white;
+  color: lightgrey;
 }
 
 .nav-link-active {
-  color: white;
+  color: lightgrey;
   padding: 10px;
 }
 
@@ -22,22 +23,22 @@ body {
 
 #verticalNavbar {
   padding: 10px;
-  color: white;
+  color: lightgrey;
   width: 220px;
-  background-color: #1f5fc6;
+  background-color: #00391c;
   height: 100%;
   position: fixed;
 }
 
 #verticalNavbar > h4 {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid lightgrey;
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
 
 #verticalNavbar a:hover {
-  background-color: #0e47a3;
-  color: white;
+  background-color: #096302;
+  color: lightgrey;
   text-decoration: none;
 }
 
