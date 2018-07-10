@@ -1,0 +1,52 @@
+$body-bg-colour: #84b3ff
+$nav-colour: #1f5fc6
+$selected-nav-colour: #0e47a3
+
+body {
+	background-color: $body-bg-colour;
+}
+
+.main p {
+	text-align: justify
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-link-active {
+	color: white;
+	padding: 10px;
+}
+
+.main {
+	margin-left: 220px;
+	padding: 0px 10px;
+}
+
+#verticalNavbar {
+	padding: 10px;
+	color: white;
+	width: 220px;
+	background-color: $nav-colour;
+	height: 100%;
+	position:fixed;
+	
+}
+
+#verticalNavbar > h4 {
+	border-bottom: 2px solid white;
+	padding-bottom: 10px;
+	margin-bottom: 15px
+}
+
+#verticalNavbar a:hover {
+	background-color: $selected-nav-colour;
+	color: white;
+	text-decoration: none;
+}
+
+#Newton {
+	width: 200px;
+	margin-bottom: 10px;
+}
