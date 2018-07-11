@@ -1,25 +1,23 @@
+#verticalNavbar a:hover, #verticalNavbar, .nav-link-active, .nav-link {
+  color: lightgrey;
+}
+
 body {
   background-color: lightgrey;
   color: black;
   margin-bottom: 60px;
 }
 
+.main {
+  margin-left: 220px;
+  padding: 0px 10px;
+}
 .main p {
   text-align: justify;
 }
 
-.nav-link {
-  color: lightgrey;
-}
-
 .nav-link-active {
-  color: lightgrey;
   padding: 10px;
-}
-
-.main {
-  margin-left: 220px;
-  padding: 0px 10px;
 }
 
 .overviewTable {
@@ -28,8 +26,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
-.overviewTable tr, th {
+.overviewTable tr, .overviewTable th {
   border: 2px solid #00391c;
 }
 
@@ -39,9 +36,6 @@ body {
   text-align: center;
 }
 
-/*.tableTitle th, tr {
-	font-weight: lighter;
-}*/
 .tableContent th {
   font-size: 15px;
   font-weight: normal;
@@ -63,7 +57,6 @@ body {
 
 #verticalNavbar {
   padding: 10px;
-  color: lightgrey;
   width: 220px;
   background-color: #00391c;
   height: 100%;
@@ -78,7 +71,6 @@ body {
 
 #verticalNavbar a:hover {
   background-color: #096302;
-  color: lightgrey;
   text-decoration: none;
 }
 

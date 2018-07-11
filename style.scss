@@ -9,40 +9,41 @@ $table-lines-colour: #00391c;
 $footer-bg-colour:#084f2b;
 $navbar-width: 220px;
 
+%nav-colour {
+	color: $nav-text-colour
+}
+
 body {
 	background-color: $body-bg-colour;
 	color: $body-txt-colour;
 	margin-bottom: 60px;
 }
 
-.main p {
-	text-align: justify;
-}
-
-.nav-link {
-	color: $nav-text-colour;
-}
-
-.nav-link-active {
-	color: $nav-text-colour;
-	padding: 10px;
-}
-
 .main {
+	p 	{
+		text-align: justify;
+	}
 	margin-left: $navbar-width;
 	padding: 0px 10px;
 }
 
+.nav-link {
+	@extend %nav-colour;
+}
+
+.nav-link-active {
+	@extend %nav-colour;
+	padding: 10px;
+}
+
 .overviewTable {
+	tr, th {
+		border: 2px solid $table-lines-colour;
+	}
 	width: 50%;
 	border: 3px solid $table-lines-colour;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-.overviewTable tr, th {
-	border: 2px solid $table-lines-colour;
-
 }
 
 .tableTitle {
@@ -52,14 +53,12 @@ body {
 
 }
 
-/*.tableTitle th, tr {
-	font-weight: lighter;
-}*/
-
-.tableContent th {
-	font-size: 15px;
-	font-weight: normal;
-	padding-left: 4px;
+.tableContent {
+	th {
+		font-size: 15px;
+		font-weight: normal;
+		padding-left: 4px;
+	}
 }
 
 .footer {
@@ -75,8 +74,8 @@ body {
 }
 
 #verticalNavbar {
+	@extend %nav-colour;
 	padding: 10px;
-	color: $nav-text-colour;
 	width: $navbar-width;
 	background-color: $nav-colour;
 	height: 100%;
@@ -91,8 +90,8 @@ body {
 }
 
 #verticalNavbar a:hover {
+	@extend %nav-colour;
 	background-color: $selected-nav-colour;
-	color: $nav-text-colour;
 	text-decoration: none;
 }
 
