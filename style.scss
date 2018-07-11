@@ -3,6 +3,9 @@ $nav-colour: #00391c;
 $selected-nav-colour: #096302;
 $nav-text-colour: lightgrey;
 $body-txt-colour: black;
+$table-title-colour: darkgrey;
+$table-title-txt-colour: black;
+$table-lines-colour: #00391c;
 
 body {
 	background-color: $body-bg-colour;
@@ -10,7 +13,7 @@ body {
 }
 
 .main p {
-	text-align: justify
+	text-align: justify;
 }
 
 .nav-link {
@@ -25,6 +28,35 @@ body {
 .main {
 	margin-left: 220px;
 	padding: 0px 10px;
+}
+
+.overviewTable {
+	width: 50%;
+	border: 3px solid $table-lines-colour;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.overviewTable tr, th {
+	border: 2px solid $table-lines-colour;
+
+}
+
+.tableTitle {
+	background-color: $table-title-colour;
+	color: $table-title-txt-colour;
+	text-align: center;
+
+}
+
+/*.tableTitle th, tr {
+	font-weight: lighter;
+}*/
+
+.tableContent th {
+	font-size: 15px;
+	font-weight: normal;
+	padding-left: 4px;
 }
 
 #verticalNavbar {

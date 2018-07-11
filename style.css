@@ -21,6 +21,32 @@ body {
   padding: 0px 10px;
 }
 
+.overviewTable {
+  width: 50%;
+  border: 3px solid #00391c;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.overviewTable tr, th {
+  border: 2px solid #00391c;
+}
+
+.tableTitle {
+  background-color: darkgrey;
+  color: black;
+  text-align: center;
+}
+
+/*.tableTitle th, tr {
+	font-weight: lighter;
+}*/
+.tableContent th {
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 4px;
+}
+
 #verticalNavbar {
   padding: 10px;
   color: lightgrey;
