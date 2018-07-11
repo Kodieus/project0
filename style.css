@@ -1,6 +1,7 @@
 body {
   background-color: lightgrey;
   color: black;
+  margin-bottom: 60px;
 }
 
 .main p {
@@ -47,6 +48,19 @@ body {
   padding-left: 4px;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  /* Set the fixed height of the footer here */
+  line-height: 35px;
+  /* Vertically center the text there */
+  background-color: #084f2b;
+  color: lightgrey;
+  font-size: 14px;
+}
+
 #verticalNavbar {
   padding: 10px;
   color: lightgrey;
@@ -71,6 +85,10 @@ body {
 #Newton {
   width: 200px;
   margin-bottom: 10px;
+}
+
+#footerDate {
+  text-align: right;
 }
 
 @media (min-width: 600px) {

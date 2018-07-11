@@ -6,10 +6,13 @@ $body-txt-colour: black;
 $table-title-colour: darkgrey;
 $table-title-txt-colour: black;
 $table-lines-colour: #00391c;
+$footer-bg-colour:#084f2b;
+$navbar-width: 220px;
 
 body {
 	background-color: $body-bg-colour;
 	color: $body-txt-colour;
+	margin-bottom: 60px;
 }
 
 .main p {
@@ -26,7 +29,7 @@ body {
 }
 
 .main {
-	margin-left: 220px;
+	margin-left: $navbar-width;
 	padding: 0px 10px;
 }
 
@@ -59,10 +62,22 @@ body {
 	padding-left: 4px;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35px; /* Set the fixed height of the footer here */
+  line-height: 35px; /* Vertically center the text there */
+  background-color: $footer-bg-colour;
+  color: $nav-text-colour;
+  font-size: 14px;
+
+}
+
 #verticalNavbar {
 	padding: 10px;
 	color: $nav-text-colour;
-	width: 220px;
+	width: $navbar-width;
 	background-color: $nav-colour;
 	height: 100%;
 	position:fixed;
@@ -84,6 +99,10 @@ body {
 #Newton {
 	width: 200px;
 	margin-bottom: 10px;
+}
+
+#footerDate {
+	text-align: right;
 }
 
 @media (min-width: 600px) {
